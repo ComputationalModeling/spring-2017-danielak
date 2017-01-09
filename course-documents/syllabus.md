@@ -8,17 +8,17 @@ A useful definition of *computational science* is “the use of computers to ana
 
 By the end of this course, you will be able to:
 
-1.  Gain insight into physical, biological, and social systems through the use of computational algorithms and tools.
+1. Gain insight into physical, biological, and social systems through the use of computational algorithms and tools.
 
-2.  Write programs to solve common problems in a variety of disciplines.
+2. Write programs to solve common problems in a variety of disciplines.
 
-3.  Identify salient features of a system that can be codified into a model.
+3. Identify salient features of a system that can be codified into a model.
 
-4.  Manipulate, analyze, and visualize datasets and use this data to evaluate models.
+4. Manipulate, analyze, and visualize datasets and use this data to evaluate models.
 
-5.  Have an understanding of basic numerical methods (e.g., numerical integration, differential equations, Monte Carlo) and be able to use them to solve problems.
+5. Have an understanding of basic numerical methods (e.g., numerical integration, differential equations, Monte Carlo) and be able to use them to solve problems.
 
-6.  Be able to take results from a scientific computing problem and present it both verbally and in writing.
+6. Be able to take results from a scientific computing problem and present it both verbally and in writing.
 
 We will work toward the goals expressed above throughout this course using a range of activities – primarily by writing software both individually and in small groups, but also through discussion, presentations, and other types of exercises.
 
@@ -26,15 +26,15 @@ We will work toward the goals expressed above throughout this course using a ran
 
 The primary topics covered in this course include:
 
--   Creation of models (making mathematical representations of systems).
+- Creation of models (making mathematical representations of systems).
 
--   The basics of functional programming in Python (i.e., variables and types, functions, simple data structures, strings, lists, tuples)
+- The basics of functional programming in Python (i.e., variables and types, functions, simple data structures, strings, lists, tuples)
 
--   Plotting and data visualization
+- Plotting and data visualization
 
--   File and dataset manipulation
+- File and dataset manipulation
 
--   Basic numerical techniques, possibly including statistics, linear regression, difference equations, Monte Carlo, agent-based modeling, numerical integration
+- Basic numerical techniques, possibly including statistics, linear regression, difference equations, Monte Carlo, agent-based modeling, numerical integration
 
 Please note that **creating models to describe and understand systems** (whether they are in the physical, life, or social sciences, or in engineering) is the driving principle of this course – everything else we teach you is in service to this goal!
 
@@ -214,23 +214,23 @@ Note: grades will not be curved - your grade is based on your own effort and pro
 
 **Instructions for downloading Anaconda (Python 3.5.x):**
 
-1.  Go to the Anaconda Download webpage: *https://www.continuum.io/downloads*
+1. Go to the Anaconda Download webpage: *https://www.continuum.io/downloads*
 
-2.  Use the “Jump to: Windows | OS X | Linux” to pick your operating system.
+2. Use the “Jump to: Windows | OS X | Linux” to pick your operating system.
 
-3.  Download the Python 3.5 version (64 bit recommended).
+3. Download the Python 3.5 version (64 bit recommended).
 
-4.  Follow the directions at the bottom of the page to install Python on your specific operating system.
+4. Follow the directions at the bottom of the page to install Python on your specific operating system.
 
-5.  Open the command line program on your computer
+5. Open the command line program on your computer
 
-    -   On windows, type CMD in the run box in the Start menu.
+ - On windows, type CMD in the run box in the Start menu.
 
-    -   On Mac, type “terminal” and hit enter in the Finder window
+ - On Mac, type “terminal” and hit enter in the Finder window
 
-    -   On Linux, open up the console application
+ - On Linux, open up the console application
 
-6.  Type “ipython notebook” in the command line and hit enter
+6. Type “ipython notebook” in the command line and hit enter
 
 If everything goes correctly, a browser window should open up with the Jupyter interface running. If things don’t work, don’t worry, we will help you get started.
 
@@ -244,11 +244,11 @@ Enter your MSU NetID. The initial password will be your Apid with an @ on the en
 
 Once your account is activated you can access the classroom Jupyterhub server using the following instructions:
 
-1.  Open up a web browser and go to the following URL: https://jupyterhub.egr.msu.edu
+1. Open up a web browser and go to the following URL: https://jupyterhub.egr.msu.edu
 
-2.  Type your engineering login name. This will be your MSU NetID.
+2. Type your engineering login name. This will be your MSU NetID.
 
-3.  Your engineering password.
+3. Your engineering password.
 
 If everything is working properly you will see the main “Files” windows in the Jupyter interface.
 
@@ -264,12 +264,12 @@ Once you see your filename in the jupyter window you can just click on that name
 
 When you are finished editing your IPython notebook and are ready to turn it in you will need to download the ipynb file from the Jupyter interface.
 
-1.  With the notebook file open in Jupyter, go to the “File” menu, select the “Download as” menu option and then choose “iPython Notebook (.ipynb)”
+1. With the notebook file open in Jupyter, go to the “File” menu, select the “Download as” menu option and then choose “iPython Notebook (.ipynb)”
 
-2.  Pick a place to save the file (The desktop is a good choice).
+2. Pick a place to save the file (The desktop is a good choice).
 
-3.  Make sure you make a copy of the .ipynb file for your own records.
+3. Make sure you make a copy of the .ipynb file for your own records.
 
-4.  Go to the Desire 2 Learn ([*http://d2l.msu.edu*](http://d2l.msu.edu)) class website and upload the .ipynb file into the assignment folder.
+4. Go to the Desire 2 Learn ([*http://d2l.msu.edu*](http://d2l.msu.edu)) class website and upload the .ipynb file into the assignment folder.
 
 **NOTE:** Video versions of these instructions are available on the [*CMSE YouTube channel*](https://www.youtube.com/channel/UCzs8QmQJ74xHmxRrq3QtvtQ).
