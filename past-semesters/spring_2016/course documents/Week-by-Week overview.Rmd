@@ -1,0 +1,41 @@
+---
+title: "Introduction to Computational Modeling 1"
+author: "Brian Danielak and Brian O'Shea"
+date: "September 9, 2015"
+output: 
+  rmarkdown::tufte_handout:
+    md_extensions: +pipe_tables+multiline_tables+grid_tables
+  pdf_document:
+    md_extensions: +pipe_tables+multiline_tables+grid_tables
+---
+
+# Intended Learning Outcomes
+
+By the end of this course, students will be able to:
+
+1.	Gain insight into physical, biological, and social systems through the use of computational algorithms and tools.
+2.	Write programs to solve common problems in a variety of disciplines (including biology, physics, economics, and business).
+3.	Identify salient features of a system that can be codified into a model.
+4.	Manipulate, analyze, and visualize datasets and use this data to evaluate models.
+5.	Have an understanding of basic numerical methods (e.g., numerical integration, difference equations, Monte Carlo) and be able to use them to solve problems.
+6.	Be able to take results from a scientific computing problem and present them both verbally and in writing.
+
+# Tools We'll Use
+
+# Week-by-Week Structure
+
+     
+What are models and how do we represent them?   Intro to Jupyter Notebooks and PyPlot   Plotting Blood Sugar          
+
+: Sample grid table.
+
++-------------+-----------------------------------------------+---------------------------------------+----------------------------------------+
+| Week Number |                Core Model Idea                |           Python Instruction          |              Assignments               |
++=============+===============================================+=======================================+========================================+
+|           1 | What are models and how do we represent them? | Intro to Jupyter Notebooks and PyPlot | Plotting and understanding Blood Sugar |
++-------------+-----------------------------------------------+---------------------------------------+----------------------------------------+
+|           2 | Unconstrained Growth                          | Variables                             |                                        |
++-------------+-----------------------------------------------+---------------------------------------+----------------------------------------+
+
+
+
