@@ -1,0 +1,248 @@
+---
+title: "Econophysics Module"
+author: "CMSE 201"
+params: 
+  is_instructor_notes: True
+output: 
+  ioslides_presentation:
+    smart: True
+    number_sections: True
+  html_document:
+    toc: True
+    toc_float: True
+  pdf_document:
+    toc: True
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(magrittr)
+
+add_instructor_text <- function(text) {
+  if (params$is_instructor_notes) {
+    paste0("\n---\n\n", "# *Instructor Note*\n\n", text, "\n\n---", collapse="") %>% 
+      cat(sep="")
+  }
+}
+```
+
+# Introduction: Let's Play A Game 
+
+## What We'll Be Doing
+
+We're going to play a series of games with money. In each game, you'll be asked to 
+
+- **Make** predictions about what you think will happen
+- **Play** the game
+- **Reconcile** the outcome of the game with what you predicted
+
+In later games you'll also be proposing new rules of your own and trying to think about how they'll affect the system.
+
+## A Word About Predictions
+
+When it comes to **predictions**, we're not grading you on whether you're "right." What we care about is that you can justify why you think what will happen will happen. 
+
+# In for a Penny (10-15 mins) 
+
+## Overview of "In for a Penny"
+
+### Setup
+
+Each person in the room is an agent. All agents start with exactly one penny (no more, no less). 
+
+### The Goal
+
+End up with the most money
+
+## How to Play "In for a Penny"
+
+Every person in the room is an **agent**. Each agent starts with *one penny*. We'll pick a time (say, 3 minutes). Once the clock starts, you'll begin pairwise trading:
+
+1. **Find an agent** so you can engage in a money trade.
+1. **Record your partner's name** 
+2. **Flip a coin** (or play a quick round of rock, paper, scissors / odds & evens) to determine who pays whom.
+3. **The loser pays** the winner one penny. 
+4. **You both record** how much money you have after the trade.
+4. **Find another agent** and repeat this process as many times as you can until time runs out.
+
+```{r, results='asis'}
+"We've deliberately left out something important. What happens when a broke agent (someone with zero money) tries to enter into a trade?" %>% 
+  add_instructor_text()
+
+```
+
+# Demonstrate a Quick Example Trade
+
+## Make a Prediction
+
+Take 60 seconds to think. When we start the game, say with 17 agents, here's what it could look like if we plotted how much money each agent had:
+
+```{r, message=FALSE, fig.height=3, fig.width=4, fig.align='center'}
+library(ggplot2)
+library(magrittr)
+
+# Starting Money in "In For A Penny"
+starting_money_data <- data.frame(agent_id = 1:17, money = rep(1, times = 17))
+starting_money_plot <- ggplot() +
+  geom_bar(
+    aes(y = money, x=agent_id),
+    data = starting_money_data,
+    stat = "identity"
+  ) +
+  ylim(c(0, 4)) +
+  ggtitle("Starting Money (in Pennies) vs. Agent ID") +
+  theme_bw()
+
+print(starting_money_plot)
+# ggsave("images/starting-money-in-for-a-penny.png", dpi=600)
+```
+
+### Does That Plot Make Sense?
+
+## Each Student Should Do This Now (1/2)
+
+```{r, fig.height=1.5, fig.width=2, fig.align='center'}
+starting_money_plot <- starting_money_plot + ggtitle(NULL)
+print(starting_money_plot)
+```
+
+1. What do you think will that graph look like after one round of the game? (Sketch it on your whiteboard)
+	1. Why?
+2. What do you think that graph will look like after many rounds of the game? (Sketch it on your whiteboard)
+	1. Why?
+3. How much money do you expect to end up with? Don't share your predictions! It'll be more fun that way ;-)
+
+## Play the Game (~3 mins per round?)
+
+Every person in the room is an **agent**. Each agent starts with *one penny*. We'll pick a time (say, 3 minutes). Once the clock starts, you'll begin pairwise trading:
+
+1. **Find an agent** so you can engage in a money trade.
+2. **Flip a coin** (or play a quick round of rock, paper, scissors / odds & evens) to determine who pays whom.
+3. **The loser pays** the winner one penny.
+4. **Find another agent** and repeat this process as many times as you can until time runs out.
+
+### **GO!**
+
+## Report out
+
+Have each agent report out to the class how much money they have, so you can make a public table of who has what money. 
+
+```{r, motivations-behind-this-activity, results='asis'}
+"**Motivation**: One of the things we hope students will see as we do this is that plotting distributions (rather than money vs. agent id) makes comparison easier. If we play two games, and in game 1 agent 12 ends up with all the money, but in game 2 agent 6 gets all the money, the plots of money vs. agent_id will be different from those two games. But the plot of income distribution would be the same. Distribution plots abstract away from the individual agents to make it easier for us to compare wealth distributions across game rounds (and across societies)" %>% 
+  add_instructor_text()
+```
+
+## Each Student Should Do This Now (2/2)
+
+Use your whiteboard to fill in the data on this blank plot
+
+```{r, message=FALSE, fig.height=3, fig.width=4, fig.align='center'}
+library(ggplot2)
+library(magrittr)
+
+# Starting Money in "In For A Penny"
+starting_money_data <- data.frame(agent_id = 1:17, money = rep(0, times = 17))
+blank_money_plot <- ggplot() +
+  geom_bar(
+    aes(y = money, x=agent_id),
+    data = starting_money_data,
+    stat = "identity"
+  ) +
+  ylim(c(0, 4)) +
+  ggtitle("Final Money (in Pennies) vs. Agent ID") +
+  theme_bw()
+
+print(blank_money_plot)
+# ggsave("images/blank_money_plot.png", dpi=600)
+```
+
+Fill the plot in with the actual data that got reported out.
+
+## Reconciling Your Predictions
+
+### For Class Discussion
+
+1. How does the class plot compare to your sketch prediction of this graph? 
+  1. If they were different, why do you think that happened?
+2. What did everyone *think* they would finish with. 
+  1. How many people were right? Close?
+
+  
+# Variation 1: In for a Pound?
+
+## Rule Change
+
+Instead of starting with 1 penny apiece, all agents start with `N` pennies, where the class votes on/discusses what `N` should be. So, we're introducing a few new potential quantities to the game:
+
+- `starting_money`: or how much money each agent starts with.
+- `number_of_rounds`: for how long/how many chances will the agents have to trade?
+- `number_of_agents`: how many individuals will be involved in the trading system
+
+## The Class Should Consider This (1/3)
+
+### First, Take 60 Seconds Thinking *Silently* for Yourself
+
+1. If `starting_money` is greater than 1 pennies per agent, will that change the outcome of the game compared to when it was just 1? 
+	1. If so, how will it change and why?
+	2. If not, why won't it change?
+	
+### Then Discuss Your Arguments as a Class
+
+## The Class Should Consider This (2/3)
+
+### First, Take 60 Seconds Thinking *Silently* for Yourself
+
+2. Do you suppose there's a relationship between `starting_money`, and `number_of_rounds`?
+	1. What do you think happens if `starting_money` is much, much greater than the `number_of_rounds`---that is, if every agent starts with a ginormous amount of money but only plays a few rounds.
+
+### Then Discuss Your Arguments as a Class
+
+## The Class Should Consider This (3/3)
+
+### First, Take 60 Seconds Thinking *Silently* for Yourself
+
+3. What about when we fiddle with the `number_of_agents`?
+	1. What happens if it's just a handful of agents, where each agent has the same very large amount of `starting_money`, and they trade for a long time. So, in this scenario, 
+		- `number_of_agents` is very small (say less than 10?)
+		- `starting_money` is very big
+		- `number_of_rounds` is very big
+		
+### Then Discuss Your Arguments as a Class
+
+# Let's Add Some New Rules
+
+## Make Up Some New Rules
+
+### Scheme In Your Groups
+
+Take a few minutes to think about one or more new rules you'd like to add to the simulation
+
+### Share Out As A Class
+
+When you're ready, we'll share out as a class and decide which new rule(s) to add to the game.
+
+### Play with the New Rules and Gather Data
+
+Play! Just like before, gather data at the end of each round so we can plot, analyze, and compare it.
+
+```{r, results='asis'}
+"Here are some potential rule variations you can consider:
+
+- The SEC (Securities and Exchange Commission) is out to lunch: **A single trade can be more than a penny**. Agents must negotiate the trade amount before flipping the coin/rolling the die. The only catch is that you can't trade more than the maximum amount of money held by the poorer person. For example, Agents Bond (7 pennies) and Romanov (14 pennies) can only exchange up to 7 pennies in a single trade, because any more than that and Bond risks going into debt.
+- Some people get robbed: Each agent starts with some number K of *robbery* tokens. Maybe start with one. In any given trade, the losing party can spend a robbery token to steal the money anyway. Once a token is spent, it can't be re-used.
+- Get Rich or Try Dying: At any point in the game, and agent can choose to shuffle off the mortal coil and leave all of their money to their estate. Why would they do that? Because they fear losing their money to the market and they want to finish the game without risking losing any more money. Here's how it works:
+	- Agent Bond decides that once he can get up to 20 pennies, his life is complete. After he gets his 20th penny, he takes a dangerous mission to go behind enemy lines in an undisclosed location. He is never heard from again. Because MI-6 liquidates Bond's accounts on his presumed death, the final amount of money Bond finishes the game with is frozen at however much money he had when he expired. 
+- Leveling the Scales: Whenever two agents with differing amounts of money enter into a trade (Say Agent Bond has 7 pennies, and Agent Romanov has 14 pennies), the agent with less money gets a probability advantage. So, determining the trade moves from being a coin-flip problem to a die-roll problem, where the less well-off party gets a weight in their favor. (In the case of a six-sided die---or d6---an example might be that 1--4 are victory rolls for Bond, while only 5 and 6 mean that Romanov wins.)
+- The Rich Get Richer: This is basically the opposite of Leveling the Scales. When two agents of unequal wealth enter into a trade, the wealthier agent has a better chance of winning. In this scenario, it's interesting to consider whether and how the value of the weighting factor speeds up the concentration of wealth into the hands of the few.
+- The loaded die: One of the agents isn't playing with a fair random number generator, but no one else knows the identity of this mystery person. What would it take to try to root out who the rigged-game agent is (in terms of rounds played)? If we do make a guess at who it is, can we also try to infer the value of the load on their die? (That is, say we identify our culprit. Can we use data to back-calculate what the weighting was on the die they were using?)
+- Social Safety Net: **Trades may randomly get *taxed* by an outside person, who takes money from the trade and redistributes it to agents who are broke**. 
+	- Designate one person to be the tax collector. The tax collector is not an agent. Instead, the tax collector can walk up to any potential trade before it's happened. When it's time to determine who wins, the tax collector flips their own coin. If the tax collector's coin comes up winning (for them), they may *tax* the trade and take an amount from it between 1 and the total amount being traded. (For example, Agents Bond and Romanov have agreed to flip for a 7 coin trade. Bond wins, but the tax collector also wins their own coin toss. The tax collector taxes the trade and takes 4 pennies, leaving Bond winning only three pennies. (So, the outcome of the trade is that Romanov gives up 7 coins, the tax collector gets four coins, and Bond gets three coins). In this scenario, whenever someone goes broke, they can approach the tax collector for money. If the tax collector has any money, they must give it to the person requesting the money.
+" %>% 
+  add_instructor_text()
+```
+
+## Provide Feedback
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefj3hOEQkU2V_ue9mZ5LuFr_AIfTbQFk8IQGIt8cWVSccLcA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+

@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="D2L_343458" xmlns:d2l_2p0="http://desire2learn.com/xsd/d2lcp_v2p0" xmlns:scorm_1p2="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1">
+    <organizations default="d2l_orgs">
+        <organization identifier="d2l_org">
+            <item identifier="3139417" identifierref="RES_CONTENT_3139417" d2l_2p0:id="1" description="" completion_type="2">
+                <title>Course information and useful links</title>
+                <item identifier="3382454" identifierref="RES_CONTENT_3382454" d2l_2p0:id="2" description="" completion_type="2" resource_type_key="">
+                    <title>Mid-semester survey</title>
+                </item>
+                <item identifier="3176619" identifierref="RES_CONTENT_3176619" d2l_2p0:id="3" description="" completion_type="2">
+                    <title>Syllabus</title>
+                </item>
+                <item identifier="3176621" identifierref="RES_CONTENT_3176621" d2l_2p0:id="4" description="" completion_type="2">
+                    <title>Course calendar (subject to change)</title>
+                </item>
+                <item identifier="3316582" identifierref="RES_CONTENT_3316582" d2l_2p0:id="5" description="" completion_type="2">
+                    <title>Student-centered actions - guidelines</title>
+                </item>
+                <item identifier="3169107" identifierref="RES_CONTENT_3169107" d2l_2p0:id="6" description="" completion_type="2" resource_type_key="">
+                    <title>The official Python tutorial</title>
+                </item>
+                <item identifier="3169108" identifierref="RES_CONTENT_3169108" d2l_2p0:id="7" description="" completion_type="2">
+                    <title>Markdown basics (for Jupyter notebooks)</title>
+                </item>
+                <item identifier="3391023" identifierref="RES_CONTENT_3391023" d2l_2p0:id="8" description="" completion_type="2">
+                    <title>Numpy 2D array tutorial</title>
+                </item>
+                <item identifier="3391674" identifierref="RES_CONTENT_3391674" d2l_2p0:id="9" description="" completion_type="2">
+                    <title>Matplotlib animation tutorial</title>
+                </item>
+                <item identifier="3407618" identifierref="RES_CONTENT_3407618" d2l_2p0:id="10" description="" completion_type="2">
+                    <title>print statement/string formatting tutorial</title>
+                </item>
+                <item identifier="3407674" identifierref="RES_CONTENT_3407674" d2l_2p0:id="11" description="" completion_type="2">
+                    <title>Function tutorial</title>
+                </item>
+            </item>
+            <item identifier="3154456" identifierref="RES_CONTENT_3154456" d2l_2p0:id="12" description="" completion_type="2">
+                <title>Pre-class assignments</title>
+                <item identifier="3169786" identifierref="RES_CONTENT_3169786" d2l_2p0:id="13" description="" completion_type="2">
+                    <title>Pre-class assignments</title>
+                </item>
+                <item identifier="3491949" identifierref="RES_CONTENT_3491949" d2l_2p0:id="14" description="" completion_type="2">
+                    <title>Homework 7 (for Wednesday April 20th)</title>
+                </item>
+                <item identifier="3434465" identifierref="RES_CONTENT_3434465" d2l_2p0:id="15" description="" completion_type="2">
+                    <title>Day 19 pre-class assignment</title>
+                </item>
+                <item identifier="3434466" identifierref="RES_CONTENT_3434466" d2l_2p0:id="16" description="" completion_type="2" date_due="2016-03-30T03:59:00">
+                    <title>Day 19 pre-class assignment dropbox (due Tues. March 20,  11:59 p.m.)</title>
+                </item>
+                <item identifier="3415229" identifierref="RES_CONTENT_3415229" d2l_2p0:id="17" description="" completion_type="2">
+                    <title>Day 18 pre-class assignment</title>
+                </item>
+                <item identifier="3415230" identifierref="RES_CONTENT_3415230" d2l_2p0:id="18" description="" completion_type="2" date_due="2016-03-23T03:59:00">
+                    <title>Day 18 pre-class assignment dropbox (due Tues. March 22,  11:59 p.m.)</title>
+                </item>
+                <item identifier="3413852" identifierref="RES_CONTENT_3413852" d2l_2p0:id="19" description="" completion_type="2">
+                    <title>Day 17 pre-class assignment</title>
+                </item>
+                <item identifier="3413853" identifierref="RES_CONTENT_3413853" d2l_2p0:id="20" description="" completion_type="2" date_due="2016-03-21T14:00:00">
+                    <title>Day 17 pre-class assignment (due Mar. 20 @ 11:59 p.m.)</title>
+                </item>
+                <item identifier="3400642" identifierref="RES_CONTENT_3400642" d2l_2p0:id="21" description="" completion_type="2">
+                    <title>Day 16 pre-class assignment</title>
+                </item>
+                <item identifier="3400637" identifierref="RES_CONTENT_3400637" d2l_2p0:id="22" description="" completion_type="2" date_due="2016-03-16T03:59:00">
+                    <title>Day 16 pre-class assignment (due Tues. 3/15 @ 11:59 p.m.)</title>
+                </item>
+                <item identifier="3370769" identifierref="RES_CONTENT_3370769" d2l_2p0:id="23" description="" completion_type="2">
+                    <title>Day 13 pre-class assignment</title>
+                </item>
+                <item identifier="3370770" identifierref="RES_CONTENT_3370770" d2l_2p0:id="24" description="" completion_type="2">
+                    <title>Day 13 pre-class assignment (due Sunday 2/28, 11:59 p.m.)</title>
+                </item>
+                <item identifier="3321148" identifierref="RES_CONTENT_3321148" d2l_2p0:id="25" description="" completion_type="2">
+                    <title>Day 9 pre-class assignment</title>
+                </item>
+                <item identifier="3321152" identifierref="RES_CONTENT_3321152" d2l_2p0:id="26" description="" completion_type="2" date_due="2016-02-10T04:59:00">
+                    <title>Day 9 pre-class assignment (due Tues. 2/9 at 11:59 p.m.)</title>
+                </item>
+                <item identifier="3315912" identifierref="RES_CONTENT_3315912" d2l_2p0:id="27" description="" completion_type="2">
+                    <title>Day 8 pre-class assignment</title>
+                </item>
+                <item identifier="3315911" identifierref="RES_CONTENT_3315911" d2l_2p0:id="28" description="" completion_type="2" date_due="2016-02-08T04:59:00">
+                    <title>Day 8 - pre-class assignment dropbox (due Feb. 7, 11:59 p.m.)</title>
+                </item>
+                <item identifier="3296444" identifierref="RES_CONTENT_3296444" d2l_2p0:id="29" description="" completion_type="2">
+                    <title>Day 6 pre-class assignment</title>
+                </item>
+                <item identifier="3296445" identifierref="RES_CONTENT_3296445" d2l_2p0:id="30" description="" completion_type="2" date_due="2016-02-01T04:59:00">
+                    <title>Day 6 - pre-class assignment dropbox (due Jan. 31 2016, 11:59 p.m.)</title>
+                </item>
+                <item identifier="3279614" identifierref="RES_CONTENT_3279614" d2l_2p0:id="31" description="" completion_type="2">
+                    <title>Day 5 pre-class assignment</title>
+                </item>
+                <item identifier="3279617" identifierref="RES_CONTENT_3279617" d2l_2p0:id="32" description="" completion_type="2" date_due="2016-01-27T04:59:00">
+                    <title>Day 5 pre-class assignment (due Tuesday 1/26, 11:59 p.m.)</title>
+                </item>
+                <item identifier="3273054" identifierref="RES_CONTENT_3273054" d2l_2p0:id="33" description="" completion_type="2">
+                    <title>Day 4 pre-class assignment</title>
+                </item>
+                <item identifier="3273052" identifierref="RES_CONTENT_3273052" d2l_2p0:id="34" description="" completion_type="2" date_due="2016-01-25T04:59:00">
+                    <title>Day 4 pre-class assignment</title>
+                </item>
+                <item identifier="3251876" identifierref="RES_CONTENT_3251876" d2l_2p0:id="35" description="" completion_type="2">
+                    <title>Day 3 pre-class assignment</title>
+                </item>
+                <item identifier="3251877" identifierref="RES_CONTENT_3251877" d2l_2p0:id="36" description="" completion_type="2" date_due="2016-01-20T04:59:00">
+                    <title>Day 3 - pre-class assignment dropbox (due Tues. Jan. 19th, 11:59 p.m.)</title>
+                </item>
+                <item identifier="3176641" identifierref="RES_CONTENT_3176641" d2l_2p0:id="37" description="" completion_type="2">
+                    <title>Day 2 pre-class assignment</title>
+                </item>
+                <item identifier="3176923" identifierref="RES_CONTENT_3176923" d2l_2p0:id="38" description="" completion_type="2" date_due="2016-01-13T04:59:00">
+                    <title>Day 2 - pre-class assignment dropbox</title>
+                </item>
+            </item>
+            <item identifier="3139468" identifierref="RES_CONTENT_3139468" d2l_2p0:id="39" description="" completion_type="2">
+                <title>In-class assignments</title>
+                <item identifier="3169787" identifierref="RES_CONTENT_3169787" d2l_2p0:id="40" description="" completion_type="2">
+                    <title>In-class assignments</title>
+                </item>
+                <item identifier="3491947" identifierref="RES_CONTENT_3491947" d2l_2p0:id="41" description="" completion_type="2">
+                    <title>Day 24 in-class assignment dropbox (Wed. Apr. 20)</title>
+                </item>
+                <item identifier="3491946" identifierref="RES_CONTENT_3491946" d2l_2p0:id="42" description="" completion_type="2">
+                    <title>Link to Homework 7 (for day 24)</title>
+                </item>
+                <item identifier="3491944" identifierref="RES_CONTENT_3491944" d2l_2p0:id="43" description="" completion_type="2">
+                    <title>Day 24 in-class assignment (Wed. April 20)</title>
+                </item>
+                <item identifier="3478778" identifierref="RES_CONTENT_3478778" d2l_2p0:id="44" description="" completion_type="2" resource_type_key="">
+                    <title>/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1486755</title>
+                </item>
+                <item identifier="3478768" identifierref="RES_CONTENT_3478768" d2l_2p0:id="45" description="" completion_type="2" resource_type_key="">
+                    <title>Day 23 In-Class iPython Notebook (Wed April 13)</title>
+                </item>
+                <item identifier="3478770" identifierref="RES_CONTENT_3478770" d2l_2p0:id="46" description="" completion_type="2" resource_type_key="">
+                    <title>Day 23 Extra File #1 (Wed April 13)</title>
+                </item>
+                <item identifier="3478775" identifierref="RES_CONTENT_3478775" d2l_2p0:id="47" description="" completion_type="2" resource_type_key="">
+                    <title>Day 23 Extra File #2 (Wed April 13)</title>
+                </item>
+                <item identifier="3469772" identifierref="RES_CONTENT_3469772" d2l_2p0:id="48" description="" completion_type="2">
+                    <title>Day 22 in-class assignment (Mon. April 11)</title>
+                </item>
+                <item identifier="3469771" identifierref="RES_CONTENT_3469771" d2l_2p0:id="49" description="" completion_type="2">
+                    <title>Day 22 in-class assignment (Mon. April 11)</title>
+                </item>
+                <item identifier="3461066" identifierref="RES_CONTENT_3461066" d2l_2p0:id="50" description="" completion_type="2">
+                    <title>Day 21 in-class assignment (Wed. April 6)</title>
+                </item>
+                <item identifier="3461065" identifierref="RES_CONTENT_3461065" d2l_2p0:id="51" description="" completion_type="2">
+                    <title>Day 21 in-class assignment (April 6)</title>
+                </item>
+                <item identifier="3456384" identifierref="RES_CONTENT_3456384" d2l_2p0:id="52" description="" completion_type="2">
+                    <title>Day 20 in-class assignment (Mon. April 4)</title>
+                </item>
+                <item identifier="3441181" identifierref="RES_CONTENT_3441181" d2l_2p0:id="53" description="" completion_type="2">
+                    <title>Day 19 in-class assignment dropbox</title>
+                </item>
+                <item identifier="3441180" identifierref="RES_CONTENT_3441180" d2l_2p0:id="54" description="" completion_type="2">
+                    <title>Day 19 data file #3</title>
+                </item>
+                <item identifier="3441177" identifierref="RES_CONTENT_3441177" d2l_2p0:id="55" description="" completion_type="2">
+                    <title>Day 19 data file #2</title>
+                </item>
+                <item identifier="3441176" identifierref="RES_CONTENT_3441176" d2l_2p0:id="56" description="" completion_type="2">
+                    <title>Day 19 data file #1</title>
+                </item>
+                <item identifier="3441175" identifierref="RES_CONTENT_3441175" d2l_2p0:id="57" description="" completion_type="2">
+                    <title>Day 19 in-class notebook</title>
+                </item>
+                <item identifier="3424816" identifierref="RES_CONTENT_3424816" d2l_2p0:id="58" description="" completion_type="2">
+                    <title>Day 18 in-class assignment (numerical integration/differentiation)</title>
+                </item>
+                <item identifier="3424819" identifierref="RES_CONTENT_3424819" d2l_2p0:id="59" description="" completion_type="2">
+                    <title>Day 18 in-class assignment (gene assembly; Wed. March 23)</title>
+                </item>
+                <item identifier="3424829" identifierref="RES_CONTENT_3424829" d2l_2p0:id="60" description="" completion_type="2">
+                    <title>Day 18 - velocity vs. time file</title>
+                </item>
+                <item identifier="3424821" identifierref="RES_CONTENT_3424821" d2l_2p0:id="61" description="" completion_type="2">
+                    <title>Day 18 - Skydiver notebook</title>
+                </item>
+                <item identifier="3414978" identifierref="RES_CONTENT_3414978" d2l_2p0:id="62" description="" completion_type="2">
+                    <title>Day 17 in-class assignment (Monday 3/21)</title>
+                </item>
+                <item identifier="3414977" identifierref="RES_CONTENT_3414977" d2l_2p0:id="63" description="" completion_type="2">
+                    <title>Day 17 in-class assignmnent file #2</title>
+                </item>
+                <item identifier="3414976" identifierref="RES_CONTENT_3414976" d2l_2p0:id="64" description="" completion_type="2">
+                    <title>Day 17 in-class assignmnent file #1</title>
+                </item>
+                <item identifier="3406025" identifierref="RES_CONTENT_3406025" d2l_2p0:id="65" description="" completion_type="2">
+                    <title>Day 16 in-class assignment dropbox</title>
+                </item>
+                <item identifier="3406015" identifierref="RES_CONTENT_3406015" d2l_2p0:id="66" description="" completion_type="2">
+                    <title>Day 16 in-class assignment</title>
+                </item>
+                <item identifier="3376188" identifierref="RES_CONTENT_3376188" d2l_2p0:id="67" description="" completion_type="2">
+                    <title>Day 13 in-class assignment (Monday 2/29)</title>
+                </item>
+                <item identifier="3360688" identifierref="RES_CONTENT_3360688" d2l_2p0:id="68" description="" completion_type="2">
+                    <title>Day 12 in-class -- notebook for 2D model</title>
+                </item>
+                <item identifier="3360686" identifierref="RES_CONTENT_3360686" d2l_2p0:id="69" description="" completion_type="2">
+                    <title>Day 12 in-class -- code for 1D model</title>
+                </item>
+                <item identifier="3360684" identifierref="RES_CONTENT_3360684" d2l_2p0:id="70" description="" completion_type="2">
+                    <title>Day 12 in-class materials</title>
+                </item>
+                <item identifier="3352901" identifierref="RES_CONTENT_3352901" d2l_2p0:id="71" description="" completion_type="2">
+                    <title>Schelling 1971 (not necessary for exercise, just interesting)</title>
+                </item>
+                <item identifier="3352899" identifierref="RES_CONTENT_3352899" d2l_2p0:id="72" description="" completion_type="2">
+                    <title>Day 11 in-class assignment</title>
+                </item>
+                <item identifier="3352897" identifierref="RES_CONTENT_3352897" d2l_2p0:id="73" description="" completion_type="2">
+                    <title>Day 11 in-class assignment dropbox</title>
+                </item>
+                <item identifier="3336577" identifierref="RES_CONTENT_3336577" d2l_2p0:id="74" description="" completion_type="2">
+                    <title>Day 10 in-class assignment</title>
+                </item>
+                <item identifier="3336576" identifierref="RES_CONTENT_3336576" d2l_2p0:id="75" description="" completion_type="2">
+                    <title>Day 10 in-class assignment dropbox</title>
+                </item>
+                <item identifier="3317836" identifierref="RES_CONTENT_3317836" d2l_2p0:id="76" description="" completion_type="2">
+                    <title>Day 8 in-class assignment</title>
+                </item>
+                <item identifier="3317837" identifierref="RES_CONTENT_3317837" d2l_2p0:id="77" description="" completion_type="2">
+                    <title>Day 8 - in-class assignment dropbox</title>
+                </item>
+                <item identifier="3318504" identifierref="RES_CONTENT_3318504" d2l_2p0:id="78" description="" completion_type="2">
+                    <title>Day 8 - in-class assignment dropbox (part 2 of assignment - from today)</title>
+                </item>
+                <item identifier="3306885" identifierref="RES_CONTENT_3306885" d2l_2p0:id="79" description="" completion_type="2">
+                    <title>Day 7 - in-class assigment</title>
+                </item>
+                <item identifier="3306882" identifierref="RES_CONTENT_3306882" d2l_2p0:id="80" description="" completion_type="2">
+                    <title>Day 7 - in-class assignment dropbox</title>
+                </item>
+                <item identifier="3286492" identifierref="RES_CONTENT_3286492" d2l_2p0:id="81" description="" completion_type="2">
+                    <title>Day 5 - in-class assignment (notebook)</title>
+                </item>
+                <item identifier="3286493" identifierref="RES_CONTENT_3286493" d2l_2p0:id="82" description="" completion_type="2">
+                    <title>Day 5 - in-class assignment (data file 1)</title>
+                </item>
+                <item identifier="3286496" identifierref="RES_CONTENT_3286496" d2l_2p0:id="83" description="" completion_type="2">
+                    <title>Day 5 - in-class assignment (data file 2)</title>
+                </item>
+                <item identifier="3286500" identifierref="RES_CONTENT_3286500" d2l_2p0:id="84" description="" completion_type="2">
+                    <title>Day 5 in-class assignment dropbox (just turn in your notebook - not the data file!)</title>
+                </item>
+                <item identifier="3279583" identifierref="RES_CONTENT_3279583" d2l_2p0:id="85" description="" completion_type="2">
+                    <title>Day 4 - in-class assignment</title>
+                </item>
+                <item identifier="3279585" identifierref="RES_CONTENT_3279585" d2l_2p0:id="86" description="" completion_type="2">
+                    <title>Day 4 - in-class assignment dropbox</title>
+                </item>
+                <item identifier="3266449" identifierref="RES_CONTENT_3266449" d2l_2p0:id="87" description="" completion_type="2">
+                    <title>Day 3 - in-class assignment (order of magnitudes)</title>
+                </item>
+                <item identifier="3266450" identifierref="RES_CONTENT_3266450" d2l_2p0:id="88" description="" completion_type="2">
+                    <title>Day 3 - in-class assignment dropbox</title>
+                </item>
+                <item identifier="3176654" identifierref="RES_CONTENT_3176654" d2l_2p0:id="89" description="" completion_type="2">
+                    <title>Day 2 - Intro to Jupyter Notebooks</title>
+                </item>
+                <item identifier="3176657" identifierref="RES_CONTENT_3176657" d2l_2p0:id="90" description="" completion_type="2">
+                    <title>Day 2 - Modeling Cold Spread notebook</title>
+                </item>
+                <item identifier="3154801" identifierref="RES_CONTENT_3154801" d2l_2p0:id="91" description="" completion_type="2">
+                    <title>Day 2</title>
+                </item>
+                <item identifier="3169098" identifierref="RES_CONTENT_3169098" d2l_2p0:id="92" description="" completion_type="2">
+                    <title>Day 1 - "Just for fun" Jupyter notebook</title>
+                </item>
+                <item identifier="3169104" identifierref="RES_CONTENT_3169104" d2l_2p0:id="93" description="" completion_type="2">
+                    <title>Day 1 - "Just for fun" Dropbox (turn in notebook here)</title>
+                </item>
+            </item>
+            <item identifier="3139470" identifierref="RES_CONTENT_3139470" d2l_2p0:id="94" description="" completion_type="2">
+                <title>Homework assignments</title>
+                <item identifier="3169788" identifierref="RES_CONTENT_3169788" d2l_2p0:id="95" description="" completion_type="2">
+                    <title>Homework assignments</title>
+                </item>
+                <item identifier="3491936" identifierref="RES_CONTENT_3491936" d2l_2p0:id="96" description="" completion_type="2" date_due="2016-05-02T03:59:00">
+                    <title>Homework 7 dropbox (due Sun 5/1 at 11:59 p.m.)</title>
+                </item>
+                <item identifier="3491933" identifierref="RES_CONTENT_3491933" d2l_2p0:id="97" description="" completion_type="2">
+                    <title>Homework 7 (due Sun 5/1 at 11:59 p.m.)</title>
+                </item>
+                <item identifier="3444887" identifierref="RES_CONTENT_3444887" d2l_2p0:id="98" description="" completion_type="2" date_due="2016-04-07T03:59:00">
+                    <title>Homework 6 dropbox (due Wed. 4/6 at 11:59 p.m.)</title>
+                </item>
+                <item identifier="3444885" identifierref="RES_CONTENT_3444885" d2l_2p0:id="99" description="" completion_type="2">
+                    <title>Homework 6 (due Wed. 4/6 at 11:59 p.m.)</title>
+                </item>
+                <item identifier="3414969" identifierref="RES_CONTENT_3414969" d2l_2p0:id="100" description="" completion_type="2" date_due="2016-03-31T03:59:00">
+                    <title>Homework 5 dropbox (due Wednesday 3/30 at 11:59 p.m.)</title>
+                </item>
+                <item identifier="3414968" identifierref="RES_CONTENT_3414968" d2l_2p0:id="101" description="" completion_type="2">
+                    <title>Homework 5 (due Wednesday 3/30)</title>
+                </item>
+                <item identifier="3391018" identifierref="RES_CONTENT_3391018" d2l_2p0:id="102" description="" completion_type="2" date_due="2016-03-21T03:59:00">
+                    <title>Homework 4 (due Friday March 18, 5 p.m.)</title>
+                </item>
+                <item identifier="3391019" identifierref="RES_CONTENT_3391019" d2l_2p0:id="103" description="" completion_type="2">
+                    <title>Homework 4 (due Friday March 18)</title>
+                </item>
+                <item identifier="3391020" identifierref="RES_CONTENT_3391020" d2l_2p0:id="104" description="" completion_type="2">
+                    <title>Numpy 2D array tutorial</title>
+                </item>
+                <item identifier="3391676" identifierref="RES_CONTENT_3391676" d2l_2p0:id="105" description="" completion_type="2">
+                    <title>Matplotlib animation tutorial</title>
+                </item>
+                <item identifier="3407620" identifierref="RES_CONTENT_3407620" d2l_2p0:id="106" description="" completion_type="2">
+                    <title>print statement/string formatting tutorial</title>
+                </item>
+                <item identifier="3407672" identifierref="RES_CONTENT_3407672" d2l_2p0:id="107" description="" completion_type="2">
+                    <title>Function tutorial</title>
+                </item>
+                <item identifier="3377183" identifierref="RES_CONTENT_3377183" d2l_2p0:id="108" description="" completion_type="2" date_due="2016-03-04T22:00:00">
+                    <title>Homework 3 (due Friday March 4th, 5 p.m.)</title>
+                </item>
+                <item identifier="3317842" identifierref="RES_CONTENT_3317842" d2l_2p0:id="109" description="" completion_type="2">
+                    <title>Homework 2 (due Tuesday Feb. 23rd)</title>
+                </item>
+                <item identifier="3317840" identifierref="RES_CONTENT_3317840" d2l_2p0:id="110" description="" completion_type="2" date_due="2016-02-24T04:59:00">
+                    <title>Homework 2 dropbox</title>
+                </item>
+                <item identifier="3279593" identifierref="RES_CONTENT_3279593" d2l_2p0:id="111" description="" completion_type="2">
+                    <title>Homework 1 (due Sunday 1/31, 11:59 p.m.)</title>
+                </item>
+                <item identifier="3279606" identifierref="RES_CONTENT_3279606" d2l_2p0:id="112" description="" completion_type="2" date_due="2016-02-01T04:59:00">
+                    <title>Homework 1 (due Sunday 1/31, 11:59 p.m.)</title>
+                </item>
+            </item>
+            <item identifier="3139479" identifierref="RES_CONTENT_3139479" d2l_2p0:id="113" description="" completion_type="2">
+                <title>Semester project</title>
+                <item identifier="3176634" identifierref="RES_CONTENT_3176634" d2l_2p0:id="114" description="" completion_type="2">
+                    <title>Discussion of semester project</title>
+                </item>
+                <item identifier="3487718" identifierref="RES_CONTENT_3487718" d2l_2p0:id="115" description="" completion_type="2" date_due="2016-04-25T03:59:00">
+                    <title>Final presentation slides - due Sunday April 24 @ 11:59 p.m.</title>
+                </item>
+                <item identifier="3487717" identifierref="RES_CONTENT_3487717" d2l_2p0:id="116" description="" completion_type="2">
+                    <title>Semester project - final presentation instructions</title>
+                </item>
+                <item identifier="3461069" identifierref="RES_CONTENT_3461069" d2l_2p0:id="117" description="" completion_type="2" date_due="2016-04-16T03:59:00">
+                    <title>Semester project - initial research summary (due Friday April 15th)</title>
+                </item>
+                <item identifier="3461068" identifierref="RES_CONTENT_3461068" d2l_2p0:id="118" description="" completion_type="2">
+                    <title>Semester project - summary of initial research</title>
+                </item>
+            </item>
+        </organization>
+    </organizations>
+    <resources>
+        <resource identifier="RES_CONTENT_3139417" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_3382454" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_self" href="https://docs.google.com/forms/d/1KDcLpaKCcGUYCUrXYDxeMXpUCpBzL7nqDKvWtx9Uahg/viewform" title="" />
+        <resource identifier="RES_CONTENT_3176619" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="CMSE_201_final_syllabus.pdf" title="" />
+        <resource identifier="RES_CONTENT_3176621" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="CMSE201_day_by_day_calendar_Spring_2016.pdf" title="" />
+        <resource identifier="RES_CONTENT_3316582" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="student_centered_actions.pdf" title="" />
+        <resource identifier="RES_CONTENT_3169107" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_blank" href="https://docs.python.org/3.5/tutorial/" title="" />
+        <resource identifier="RES_CONTENT_3169108" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_blank" href="https://help.github.com/articles/markdown-basics/" title="" />
+        <resource identifier="RES_CONTENT_3391023" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Numpy_2D_array_tutorial.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3391674" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Example-2D_Animation.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3407618" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="String_tutorial.zip" title="" />
+        <resource identifier="RES_CONTENT_3407674" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="function_tutorial.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3154456" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_3169786" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=discuss&amp;rCode=MichiganSt-1388400" title="" />
+        <resource identifier="RES_CONTENT_3491949" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Homework_7.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3434465" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Pre_class_reading_writing_files.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3434466" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1472910" title="" />
+        <resource identifier="RES_CONTENT_3415229" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Day_18_pre_class_notebook.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3415230" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1469088" title="" />
+        <resource identifier="RES_CONTENT_3413852" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Pre-Class_Shotgun_sequencing.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3413853" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1468918" title="" />
+        <resource identifier="RES_CONTENT_3400642" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Pre-Class_Strings.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3400637" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1465287" title="" />
+        <resource identifier="RES_CONTENT_3370769" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Day_13_Pre_Class_Notebook.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3370770" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1459415" title="" />
+        <resource identifier="RES_CONTENT_3321148" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Day_9_Pre_Class_Notebook.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3321152" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1448241" title="" />
+        <resource identifier="RES_CONTENT_3315912" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Day_8_Pre_Class_Notebook.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3315911" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1447276" title="" />
+        <resource identifier="RES_CONTENT_3296444" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Day_6_Pre_Class_Notebook.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3296445" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1443427" title="" />
+        <resource identifier="RES_CONTENT_3279614" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Day_5_Pre_Class_Notebook.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3279617" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1435649" title="" />
+        <resource identifier="RES_CONTENT_3273054" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Day_4_Pre_Class_Notebook.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3273052" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1433813" title="" />
+        <resource identifier="RES_CONTENT_3251876" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Pre-class assignments\Day_3_Pre_Class_Notebook.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3251877" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1425743" title="" />
+        <resource identifier="RES_CONTENT_3176641" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Day 2 pre-class assignment.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3176923" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1390525" title="" />
+        <resource identifier="RES_CONTENT_3139468" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_3169787" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=discuss&amp;rCode=MichiganSt-1388401" title="" />
+        <resource identifier="RES_CONTENT_3491947" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1489790" title="" />
+        <resource identifier="RES_CONTENT_3491946" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Homework_7.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3491944" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Predators_and_prey.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3478778" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="_self" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1486755" title="" />
+        <resource identifier="RES_CONTENT_3478768" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="STUDENT-Notebook-for-Econophysics.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3478770" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="starting-money-in-for-a-penny.png" title="" />
+        <resource identifier="RES_CONTENT_3478775" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="blank_money_plot.png" title="" />
+        <resource identifier="RES_CONTENT_3469772" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1482872" title="" />
+        <resource identifier="RES_CONTENT_3469771" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="TravelingSalesman_Problem.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3461066" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1479786" title="" />
+        <resource identifier="RES_CONTENT_3461065" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="MonteCarlo_Integration.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3456384" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1477850" title="" />
+        <resource identifier="RES_CONTENT_3441181" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1473749" title="" />
+        <resource identifier="RES_CONTENT_3441180" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="GLB.Ts.csv" title="" />
+        <resource identifier="RES_CONTENT_3441177" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="bintanja2008.txt" title="" />
+        <resource identifier="RES_CONTENT_3441176" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="datafile_1.csv" title="" />
+        <resource identifier="RES_CONTENT_3441175" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Data_Exploration_Plotting.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3424816" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1470742" title="" />
+        <resource identifier="RES_CONTENT_3424819" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1470743" title="" />
+        <resource identifier="RES_CONTENT_3424829" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="velocities_times.npz" title="" />
+        <resource identifier="RES_CONTENT_3424821" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="skydiver.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3414978" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1469047" title="" />
+        <resource identifier="RES_CONTENT_3414977" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Example-Assembly_Exercise.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3414976" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="In-Class-Shotgun_sequencing.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3406025" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1466732" title="" />
+        <resource identifier="RES_CONTENT_3406015" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="In-Class-Strings.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3376188" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1460967" title="" />
+        <resource identifier="RES_CONTENT_3360688" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1457459" title="" />
+        <resource identifier="RES_CONTENT_3360686" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1457458" title="" />
+        <resource identifier="RES_CONTENT_3360684" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="STUDENT-moving-from-1-d-to-2-d-segregation-models.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3352901" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Schelling1971-OCR.pdf" title="" />
+        <resource identifier="RES_CONTENT_3352899" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="STUDENT-one-dimensional-segregation.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3352897" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1454963" title="" />
+        <resource identifier="RES_CONTENT_3336577" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Random_Walks.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3336576" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1451726" title="" />
+        <resource identifier="RES_CONTENT_3317836" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="viral_load_model_STUDENT.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3317837" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1447656" title="" />
+        <resource identifier="RES_CONTENT_3318504" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1447745" title="" />
+        <resource identifier="RES_CONTENT_3306885" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="day07-in_class_activity_STUDENT.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3306882" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1445214" title="" />
+        <resource identifier="RES_CONTENT_3286492" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="radioactivity_modeling.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3286493" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="count_rates.txt" title="" />
+        <resource identifier="RES_CONTENT_3286496" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="sample_amount.txt" title="" />
+        <resource identifier="RES_CONTENT_3286500" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1437005" title="" />
+        <resource identifier="RES_CONTENT_3279583" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="day04-in-class-activity.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3279585" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1435644" title="" />
+        <resource identifier="RES_CONTENT_3266449" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="order_of_magnitude_modeling.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3266450" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1431203" title="" />
+        <resource identifier="RES_CONTENT_3176654" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Introduction to Jupyter Notebooks.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3176657" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="modeling-cold-spread.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3154801" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1382889" title="" />
+        <resource identifier="RES_CONTENT_3169098" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="In-class assignments\Just_for_fun.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3169104" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1387891" title="" />
+        <resource identifier="RES_CONTENT_3139470" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_3169788" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=discuss&amp;rCode=MichiganSt-1388402" title="" />
+        <resource identifier="RES_CONTENT_3491936" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1489789" title="" />
+        <resource identifier="RES_CONTENT_3491933" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Homework_7.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3444887" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1474396" title="" />
+        <resource identifier="RES_CONTENT_3444885" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Homework_6.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3414969" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1469046" title="" />
+        <resource identifier="RES_CONTENT_3414968" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Homework_5.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3391018" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1463354" title="" />
+        <resource identifier="RES_CONTENT_3391019" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Homework_4.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3391020" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Numpy_2D_array_tutorial.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3391676" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Example-2D_Animation.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3407620" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="String_tutorial.zip" title="" />
+        <resource identifier="RES_CONTENT_3407672" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="function_tutorial.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3377183" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1461098" title="" />
+        <resource identifier="RES_CONTENT_3317842" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Homework_2.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3317840" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1447657" title="" />
+        <resource identifier="RES_CONTENT_3279593" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Homework_1.ipynb" title="" />
+        <resource identifier="RES_CONTENT_3279606" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1435646" title="" />
+        <resource identifier="RES_CONTENT_3139479" type="webcontent" d2l_2p0:material_type="contentmodule" d2l_2p0:link_target="" href="" title="" />
+        <resource identifier="RES_CONTENT_3176634" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=discuss&amp;rCode=MichiganSt-1390207" title="" />
+        <resource identifier="RES_CONTENT_3487718" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1489114" title="" />
+        <resource identifier="RES_CONTENT_3487717" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="final_presentation_instructions.pdf" title="" />
+        <resource identifier="RES_CONTENT_3461069" type="webcontent" d2l_2p0:material_type="contentlink" d2l_2p0:link_target="" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou={orgUnitId}&amp;type=dropbox&amp;rCode=MichiganSt-1479787" title="" />
+        <resource identifier="RES_CONTENT_3461068" type="webcontent" d2l_2p0:material_type="content" d2l_2p0:link_target="" href="Semester_Project_Initial_Research.ipynb" title="" />
+        <resource identifier="res_syllabus" type="webcontent" d2l_2p0:material_type="d2lsyllabus" d2l_2p0:link_target="" href="syllabus_d2l.xml" title="" />
+        <resource identifier="res_discuss_1" type="webcontent" d2l_2p0:material_type="d2ldiscussion" d2l_2p0:link_target="" href="discussion_d2l_1.xml" title="" />
+        <resource identifier="res_dropbox" type="webcontent" d2l_2p0:material_type="d2ldropbox" d2l_2p0:link_target="" href="dropbox_d2l.xml" title="" />
+        <resource identifier="res_grades" type="webcontent" d2l_2p0:material_type="d2lgrades" d2l_2p0:link_target="" href="grades_d2l.xml" title="" />
+    </resources>
+</manifest>

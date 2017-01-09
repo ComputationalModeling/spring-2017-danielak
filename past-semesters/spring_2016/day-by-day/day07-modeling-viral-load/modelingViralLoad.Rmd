@@ -1,0 +1,187 @@
+---
+title: "Understanding HIV Viral Load After Treatment"
+output: 
+  knitrBootstrap::bootstrap_document:
+    title: "Understanding HIV Viral Load After Treatment"
+    theme: united
+    highlight: zenburn
+    theme.chooser: TRUE
+    highlight.chooser: TRUE
+---
+
+# Data Loading and Transformation
+
+## Grabbing the Raw Data
+
+```{r setup, include=TRUE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readr)
+library(magrittr)
+library(ggplot2)
+library(dplyr)
+library(knitr)
+
+hiv_data <- read_csv(
+  "https://raw.githubusercontent.com/ComputationalModeling/IPML-Data/master/01HIVseries/HIVseries.csv",
+  col_names = c("time_in_days", "viral_load")
+)
+```
+
+## Log-transforming the Viral Load Data 
+
+```{r}
+hiv_data %<>%
+  mutate(log_viral_load = log(viral_load)) %>%
+  mutate(index = rownames(hiv_data))
+
+hiv_data %>% knitr::kable()
+```
+
+# Defining useful helper functions
+
+```{r}
+time <- seq(from = 0, to = 10, length.out = 101)
+
+get_model <- function(A, alpha, B, beta, time) {
+  model <- (A * exp(-alpha * time)) + (B * exp(-beta * time))
+  return (model)
+}
+
+get_slope_and_intercept <- function(
+  x_values,
+  y_values,
+  index1,
+  index2)
+{
+  rise <-  y_values[index2] - y_values[index1]
+  run <-  x_values[index2] - x_values[1]
+  slope <-  rise / run
+  intercept <-  y_values[index1] - (slope * x_values[index1])
+
+  output <- data.frame(
+    rise,
+    run,
+    slope,
+    intercept
+  )
+  return (output)
+}
+```
+
+# Data Analysis
+
+## Analytically determining the slopes and intercepts of two log-linear models for virion clearance
+
+```{r}
+early_stage_clearance <- get_slope_and_intercept(
+  x_values = hiv_data$time_in_days,
+  y_values = hiv_data$log_viral_load,
+  index1 = 1,
+  index2 = 10
+) %>% 
+  data.frame(clearance_stage="early stage")
+
+late_stage_clearance <- get_slope_and_intercept(
+  x_values = hiv_data$time_in_days,
+  y_values = hiv_data$log_viral_load,
+  index1 = 11,
+  index2 = 16
+) %>% 
+  data.frame(clearance_stage="later stage")
+
+clearance_rates <- merge(
+  early_stage_clearance, 
+  late_stage_clearance,
+  all = TRUE
+)
+
+clearance_rates %>% kable()
+```
+
+## Plotting the differing linear models for virion clearance
+
+We can try plotting the two distinct linear models
+
+```{r}
+raw_data_plot <- ggplot()
+raw_data_plot <- raw_data_plot + geom_text(
+  aes(
+    x = time_in_days,
+    y = log_viral_load,
+    label = index
+  ),
+  data = hiv_data
+)
+
+full_line_plot <- geom_abline(
+  aes(
+    slope = slope,
+    intercept = intercept,
+    group = clearance_stage,
+    color = clearance_stage
+  ),
+  data = clearance_rates
+)
+
+print(
+  raw_data_plot +
+    full_line_plot + 
+    scale_color_brewer(type = "qual")
+)
+
+```
+
+## Plotting the differing linear models as simply line segments
+
+
+```{r}
+clearance_1 <- with(
+  hiv_data,
+  data.frame(
+    x = time_in_days[1],
+    xend = time_in_days[10],
+    y = log_viral_load[1],
+    yend = log_viral_load[10],
+    clearance_stage = "early"
+  )
+)
+
+clearance_2 <- with(
+  hiv_data,
+  data.frame(
+    x = time_in_days[11],
+    xend = time_in_days[16],
+    y = log_viral_load[11],
+    yend = log_viral_load[16],
+    clearance_stage = "late"
+  )
+)
+
+clearance_rates <- merge(
+  clearance_1,
+  clearance_2,
+  all = TRUE
+)
+
+line_segment_plot <- raw_data_plot
+line_segment_plot <- line_segment_plot + geom_segment(
+  aes(
+    x = x,
+    xend = xend,
+    y = y,
+    yend = yend,
+    group = clearance_stage,
+    color = clearance_stage
+  ),
+  data = clearance_rates
+)
+
+line_segment_plot <- line_segment_plot + 
+  scale_color_brewer(type = "qual") +
+  theme_bw()
+
+print(line_segment_plot)
+```
+
+)
+

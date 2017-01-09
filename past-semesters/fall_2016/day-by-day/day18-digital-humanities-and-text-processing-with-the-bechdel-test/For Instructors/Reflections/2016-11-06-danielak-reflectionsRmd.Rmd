@@ -1,0 +1,81 @@
+---
+title: "Thoughts on the Bechdel Test Module (day 18; Fall 2016"
+author: "Brian Danielak"
+output: 
+  html_notebook:
+    toc: true
+    number_section: true
+---
+
+I feel like this lesson would have gone smoother if we let students know a few things.
+
+# Working with building blocks is exactly what happens every time we need to learn a new package or a new API. 
+
+Professionals do it every day. And packages/APIs may contain useful functions, but they also *might not*. So, deciding whether to use a piece is just as important as deciding *not* to use a piece ("`webtext.paras()` isn't what I want, because it returns an object with too much nestedness. I just want a 1 x n array-like thing where each row is a line of script."
+
+# We should consider teaching them a basic grammar of data analysis
+
+In R, the [`dplyr` package](https://cran.r-project.org/web/packages/dplyr/README.html) provides a wonderfully consistent grammar and interface for data operations. And there are just [a handful of elemental operations](http://r4ds.had.co.nz/transform.html) that get most data tasks accomplished. Below, I'll detail those core operations. Together, they form a shared grammar for talking about manipulations.
+
+```{r, echo=TRUE, eval=TRUE}
+library(datasets)
+library(dplyr)
+library(magrittr)
+```
+
+
+## Grab only certain rows using `filter`. 
+
+```{r}
+mtcars %>% filter(wt > 2.000) # get cars whose weight is greater than 2.000
+```
+
+## Sort rows by a value using `arrange`. 
+
+For example, arrange all of these cars by their number of engine cylinders, and within that, sort them by their city mileage values
+    
+```{r}
+mtcars %>% arrange(mpg, cyl)
+```
+
+## Select a subset of columns using `select`
+    
+```{r}
+mtcars %>% select(mpg, cyl)
+```
+
+## Add new variables using `mutate`
+
+Say we wanted to create a "relative efficiency index"
+
+$$\textrm{relative efficiency} = \frac{\textrm{efficiency of a given car}}{\textrm{efficiency of the most efficient car in the dataset}} \times{} 100\%$$
+
+We can do that, *and* we can compose operations to select just the relative efficiency column.
+
+```{r}
+mtcars %>% 
+  mutate(car_name = rownames(mtcars)) %>% 
+  mutate(relative_efficiency = mpg / max(mpg)) %>% 
+  arrange(desc(relative_efficiency)) %>%  # arrange by relative efficiency in descending order 
+  select(car_name, relative_efficiency, mpg)
+```
+
+## Group data and aggregate using `group_by` and `summarize`
+
+Say we wanted to know the average mpg for each type of engine cylinder configuration.
+
+```{r}
+mtcars %>% 
+  group_by(cyl) %>% 
+  summarize(average_mileage = mean(mpg))
+```
+
+
+# Closing Thoughts
+
+There's a strong movement in the R community to build a common grammar for data operations. The community calls this the [tidyverse](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/): a collection of packages built around elemental grammars for data cleaning, transformation, visualization, and modeling.
+
+- [tidy data]() means one row per observation
+- 
+
+At the end of class, Tony (who had been observing and asking me questions about the solutions throughout) sighed and said "That's very complicated."
