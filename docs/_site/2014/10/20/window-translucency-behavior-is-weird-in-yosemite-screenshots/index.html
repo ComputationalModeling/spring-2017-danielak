@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="UTF-8">
+  <title>Briandk.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/github-light.css" media="screen">
+</head>
+
+
+  <body>
+    <div class="content container">
+      <section class="page-header">
+  <h1 class="project-name">Briandk.com</h1>
+  <h2 class="project-tagline">Learning Sciences Research in Computation</h2>
+  <a href="/index.html" class="btn">Blog</a>
+  <a href="https://github.com/briandk" class="btn">Find Me on Github</a>
+  <a href="/codetimeline_demos/simulator/simulator.html"
+     class="btn">
+     CodeTimeline Demo</a>
+</section>
+
+
+<section class="main-content">
+  <div class="post">
+    <h1 class="post-title">Window translucency behavior is weird in Yosemite screenshots</h1>
+    <span class="post-date">20 Oct 2014</span>
+    <p>Apple’s <a href="http://www.apple.com/osx/design/">translucent design</a> in OS X 10.10 (Yosemite) has some weird consequences.</p>
+
+<p>My friend <a href="http://alloy-d.net/">Adam</a> took a screenshot of Safari running on his Mac using Cmd+Shift+4. When he sent it to me, I used my iPhone to capture some odd behavior: when I tapped the image in our Messages thread, the appearance of the <em>screenshot</em> changed depending on whether the background I was viewing it under was black or white. When the background was black, the Safari window completely changed in appearance.</p>
+
+<p>This color-changing behavior struck both of us as weird, because Adam sent me a static <em>screenshot</em>. The only explanation we could come up with was that in the screenshot Adam took, OS X included some alpha channel information for the safari window itself.</p>
+
+<p>To test our guess, we both fired up Preview.app, opened the screenshot, and captured how it looked when we adjusted Preview’s “Window background” setting:</p>
+<figure id="attachment_103">
+
+  <img src="/wp-content/uploads/2014/10/Preview_app_settings.png" alt="In Preferences you can change the default background color of Preview windows." class="size-medium wp-image-103" />
+</figure>
+
+<p>With a background set to white, the Safari window itself appears light, with well-defined delineations to visually separate tab titles. When we switched the background color to black, the Safari window darkened considerably, and tab delineations were much harder to spot. Curiously, changing the background color in Preview didn’t affect how the underlying wallpaper in the screenshot (in this case, flowers) looked at all. The background color change only affected the Safari window, which itself was in focus.</p>
+<figure id="attachment_104">
+
+  <img src="wp-content/uploads/2014/10/2014-10-20-yosemite-screenshot-translucency.jpg" alt="screenshot showing that in Preview.app with a black background color, the Safari window appears dark; in Preview.app with a white background, the Safari window appears light" class="size-medium wp-image-104" />
+
+</figure>
+
+<p>This behavior isn’t necessarily “bizarre,” though it did for awhile have me convinced of some kind of hidden voodoo when I <a href="https://vimeo.com/109505755">viewed the image on my iPad</a>.</p>
+
+  </div>
+
+  <!-- <div class="related">
+    <h2>Related Posts</h2>
+    <ul class="related-posts">
+      
+        <li>
+          <h3>
+            <a href="/2016/07/18/reacting-to-my-icer-submissions/">
+              My coauthor Wil Doane and I are open-sourcing our ICER 2016 submissions.
+              <small>18 Jul 2016</small>
+            </a>
+          </h3>
+        </li>
+      
+        <li>
+          <h3>
+            <a href="/2014/07/how-i-would-improve-my-graduate-program/">
+              How I would improve my graduate program
+              <small>09 Jul 2014</small>
+            </a>
+          </h3>
+        </li>
+      
+        <li>
+          <h3>
+            <a href="/2014/03/coverage-of-my-advanced-placement-exam-data-graphic/">
+              Coverage of my Advanced Placement Exam data graphic
+              <small>11 Mar 2014</small>
+            </a>
+          </h3>
+        </li>
+      
+    </ul>
+  </div> -->
+</section>
+
+    </div>
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+  </body>
+</html>

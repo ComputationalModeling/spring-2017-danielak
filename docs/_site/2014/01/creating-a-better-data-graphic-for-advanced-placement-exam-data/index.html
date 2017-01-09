@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="UTF-8">
+  <title>Briandk.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/github-light.css" media="screen">
+</head>
+
+
+  <body>
+    <div class="content container">
+      <section class="page-header">
+  <h1 class="project-name">Briandk.com</h1>
+  <h2 class="project-tagline">Learning Sciences Research in Computation</h2>
+  <a href="/index.html" class="btn">Blog</a>
+  <a href="https://github.com/briandk" class="btn">Find Me on Github</a>
+  <a href="/codetimeline_demos/simulator/simulator.html"
+     class="btn">
+     CodeTimeline Demo</a>
+</section>
+
+
+<section class="main-content">
+  <div class="post">
+    <h1 class="post-title">Creating a better data graphic for Advanced Placement exam data</h1>
+    <span class="post-date">30 Jan 2014</span>
+    <h3 id="the-background">The background</h3>
+
+<p><a href="http://www.usnews.com/news/blogs/data-mine/2014/01/14/ap-test-shows-wide-gender-gap-in-computer-science-physics">Danielle Kurtzleben at US News</a>:</p>
+
+<blockquote>
+  <p>During the past week, tech and education writers have been talking about data showing that the gender gap in the tech world is evident even in high school.</p>
+
+  <p>They cite Barbara Ericson, director of computing outreach at Georgia Tech, who recently broke down the 2013 Advanced Placement exams and found that in three states (Mississippi, Montana, and Wyoming), zero girls took the AP computer science test. Even in the state where girls are best represented among computer science test-takers, Tennessee, girls only took 29 percent of the exams.</p>
+</blockquote>
+
+<p>US News then went ahead and made this graph, which <a href="http://computinged.wordpress.com/2014/01/30/powerful-visualization-of-gender-skew-in-ap-cs-from-usa-today/">Mark Guzdial linked to</a> on his blog:</p>
+
+<p><a href="https://raw.githubusercontent.com/briandk/ap-exam-data/a3629f3c5a334cc97792d21204f339e817e8946a/usatodaygraphic.jpeg"><img src="https://raw.githubusercontent.com/briandk/ap-exam-data/a3629f3c5a334cc97792d21204f339e817e8946a/usatodaygraphic.jpeg" alt="graph of gender disparity in Advanced Placement courses" /></a></p>
+
+<p>From my best read, the graph is based off of the national numbers <a href="http://research.collegeboard.org/programs/ap/data/participation/2013">available directly from the college board</a>.</p>
+
+<p>I think this graph has a number of great features:</p>
+
+<ol>
+  <li>Since the TOTAL EXAMS bar at the top doesn’t break 1, we can see that there’s less than one female student taking an Advanced Placement (AP) exam for every one male student who takes one.</li>
+  <li>The most egregious disparities where male test-takers outnumber females are in mathematics and science, because those bars are manifestly higher than the orange line which represents a 1:1 male:female ratio</li>
+  <li>Of the math/science exams, computer science has the greatest gender disparity. More than four males took the test for every female who did.</li>
+</ol>
+
+<p>But, I think this graph isn’t as good as it could be, and here’s why:</p>
+
+<ol>
+  <li>There’s no useful ordering the list of exams; they’re alphabetical. This lack of ordering is a classic case of what Howard Wainer (and subsequently Andrew Gelman) call the <a href="http://andrewgelman.com/2008/05/08/unalphabetize/">“Alabama First” error</a>. When there’s a chance to order data in more meaningful ways, we should.</li>
+  <li>This is a big one to me: a ratio cannot shrink below zero, but its growth is effectively unbounded. This graph has an x-axis which goes to zero. Empirically, it’s impossible for any test that a student actually took to have a zero ratio. But there’s an even bigger problem.</li>
+  <li>The choice of a ratio scale means that there’s far less visual space to show classes where females vastly outnumber males. In French Language and Culture, for example, females outnumber males more than 2:1. That’s a greater disparity than the gender disparity in Calculus or Physics B. The gender disparity in Art History is also nearly 2:1, which makes it a far greater disparity than the 1.5:1 we see in Microeconomics. By setting a ratio scale that goes to zero, it’s much more difficult to spot the places where females may be greatly outnumbering males, which I would argue <em>is also a gender problem.</em></li>
+</ol>
+
+<h3 id="making-a-better-graph">Making a better graph</h3>
+
+<p>My mentor <a href="http://drdoane.com/">William E. J. Doane</a> is fond of saying you shouldn’t criticize without offering a better solution. So, with my thanks to US News and Mark for getting me thinking about this, here’s <a href="https://raw.githubusercontent.com/briandk/ap-exam-data/master/ap-exam-data.png">my refined graph</a>, made with help from <a href="http://angelazoss.com/">Angela Zoss</a> (<a href="https://raw.githubusercontent.com/briandk/ap-exam-data/master/ap-exam-data.png">click to embiggen</a>)</p>
+
+<p><a href="https://raw.githubusercontent.com/briandk/ap-exam-data/master/ap-exam-data.png"><img src="https://raw.githubusercontent.com/briandk/ap-exam-data/master/ap-exam-data.png" alt="a reimagined plot of the ap exam data" /></a></p>
+
+<p>Why do I think this graph is more helpful?</p>
+
+<ol>
+  <li><em>Instead of using a ratio scale, it uses a log-ratio scale</em>. That means equal distances from the center line correspond to equal degrees of gender disparity. Computer Science A is still an extreme disparity (more than 4:1 females to males), but now we clearly see the cluster of studio art courses, all of which have a greater than 2:1 female/male ratio.</li>
+  <li><em>It maps point size to total number of test takers</em>. The disparity in computer science A is a problem, but one of the things that jumps out is that nearly three times as many students took English Language Composition, where the gender balance is decidedly skewed female rather than male. The same is true for English Literature Composition. And Psychology, which has roughly twice as many students taking it, also has more than 1.5 female test takers for every male test taker.</li>
+  <li><em>Instead of alphabetical ordering, it orders by the degree of gender disparity</em>. Computer Science and Studio Art are at the extremes. Science and math are toward the bottom. But what also stands out is the degree to which humanities-focused courses (art, romance languages) are imbalanced in favor of females, sometimes exceedingly so.</li>
+</ol>
+
+<h3 id="now-it8217s-your-turn">Now it’s your turn</h3>
+
+<p>I’ve open-sourced all of this work under an <a href="http://choosealicense.com/">MIT license</a>.</p>
+
+<ul>
+  <li><a href="https://github.com/briandk/ap-exam-data">Fork the repo</a></li>
+  <li><a href="https://github.com/briandk/ap-exam-data/issues/new">Open an Issue</a></li>
+  <li>Make a better graph</li>
+  <li>Put <a href="https://github.com/briandk/ap-exam-data/raw/master/ap-exam-data.pdf">the scalable PDF version</a> somewhere</li>
+</ul>
+
+  </div>
+
+  <!-- <div class="related">
+    <h2>Related Posts</h2>
+    <ul class="related-posts">
+      
+        <li>
+          <h3>
+            <a href="/2016/07/18/reacting-to-my-icer-submissions/">
+              My coauthor Wil Doane and I are open-sourcing our ICER 2016 submissions.
+              <small>18 Jul 2016</small>
+            </a>
+          </h3>
+        </li>
+      
+        <li>
+          <h3>
+            <a href="/2014/10/20/window-translucency-behavior-is-weird-in-yosemite-screenshots/">
+              Window translucency behavior is weird in Yosemite screenshots
+              <small>20 Oct 2014</small>
+            </a>
+          </h3>
+        </li>
+      
+        <li>
+          <h3>
+            <a href="/2014/07/how-i-would-improve-my-graduate-program/">
+              How I would improve my graduate program
+              <small>09 Jul 2014</small>
+            </a>
+          </h3>
+        </li>
+      
+    </ul>
+  </div> -->
+</section>
+
+    </div>
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+  </body>
+</html>
