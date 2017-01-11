@@ -1,5 +1,17 @@
 # CMSE 201: Introduction to Computational Science
 
+## What's this all about
+
+Welcome! In this course we'll learn how to harness computers to help us understand the world. By the end, you'll be able to:
+
+- Understand how small economic details have huge consequences for who gets rich (Econophysics)
+- Explain just how bad the Flint water crisis is, and whether things are getting better or worse for Flint residents
+- Train a computer to predict cancer, recognize handwriting, and filter junk email
+- Create state-of-the art data visualizations ![join plot](http://seaborn.pydata.org/_images/hexbin_marginals.png)
+- Preside over the savage machinery of nature's predator-prey dynamic, where you control WHO LIVES AND WHO DIES
+
+#cmse201
+
 ## Course Description
 
 A useful definition of *computational science* is “the use of computers to analyze and solve scientific problems.” Over the course of this semester, we will explore various aspects of computational science and will acquire a variety of practical, fundamental computational skills. In addition, we will explore application-driven modeling of various systems, with applications to the physical, life, and social sciences, and also to engineering and mathematics. While we will learn some computer programming over this semester, the goal is utilitarian – this is a course in applied computing, rather than a course intended for beginning computer science majors!
