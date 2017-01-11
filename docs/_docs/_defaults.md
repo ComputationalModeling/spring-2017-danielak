@@ -1,5 +1,5 @@
 ---
 title:
-category:
+category: Course Documents
 order: 1
 ---
