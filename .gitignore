@@ -1,3 +1,6 @@
+# Jekyll-generated static site
+docs/_site
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
