@@ -1,5 +1,9 @@
 # Jekyll-generated static site
 docs/_site
+.sass-cache/
+
+# BFG repo cleaner https://rtyley.github.io/bfg-repo-cleaner/ 
+.git.bfg-report/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
