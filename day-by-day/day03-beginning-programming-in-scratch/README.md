@@ -1,6 +1,9 @@
 ## Class Announcements
 
 - Anonymous course feedback form
+- Who uses slack?
+- Hidden Figures and Grace Hopper
+-
 
 ## Beginning Programming in Scratch
 
