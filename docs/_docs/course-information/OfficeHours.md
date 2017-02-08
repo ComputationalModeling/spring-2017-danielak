@@ -3,8 +3,10 @@ title: Office Hours
 category: Course Documents
 ---
 
-| **Instructor** | **Time**              | **Location**           |
-| -------------- | --------------------- | ---------------------- |
-| Dr. Danielak   | M-W 1:30pm–2:30pm     | 1508 Engineering Bldg  |
-| Prof. Murillo  | Tue-Thu 3:00pm–4:00pm | 1508C Engineering Bldg |
-| Prof. Xie      | Tuesday 9am–11am      | 1513 Engineering Bldg  |
+| **Who**         | **When**                   | **Where**                          |
+|-----------------|----------------------------|------------------------------------|
+| Brian Danielak  | Mon and Wed 1:30 – 2:30 pm | 1503 Engineering Building          |
+| Yuying Xie      | Tue, 9 -11 a.m.            | 1513 Engineering Building          |
+| Michael Murillo | Tue and Thur 3-4 pm        | 1508 C Engineering Building        |
+| Jieqian He      | Thur 4-6 pm                | CMSE Help Room – 1508A Engineering |
+| Thomas Dixon    | Fri, 11-1 p.m.             | CMSE Help Room - 1508A Engineering |
