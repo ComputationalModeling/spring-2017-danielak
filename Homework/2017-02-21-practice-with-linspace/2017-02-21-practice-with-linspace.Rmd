@@ -1,0 +1,78 @@
+---
+title: "Getting Practice with `numpy` and `np.linspace`"
+author: "Introduction to Computational Modeling"
+date: "2/22/2017"
+output: 
+  pdf_document:
+    highlight: tango
+  html_document:
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+old_PATH <- Sys.getenv("PATH")
+new_PATH <- paste(
+  "~/anaconda3/bin/python",
+  old_PATH,
+  sep=":"
+)
+Sys.setenv(PATH = new_PATH)
+```
+
+## What You Will Turn In
+
+A python script (or Jupyter Notebook) that makes **4** plots.
+
+### For Each Plot
+
+- Use `np.linspace` to generate your time steps (x-values)
+- Call [one of the `numpy` math functions] on your x-values to generate your y-values. Use a different `numpy` math function for each of your four plots
+
+*This is something new*, so I'll explain below.
+
+## What your submission will look like
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+### Plot 1 of 4 using np.sin()
+my_x_values = np.linspace(0, 58, 300) # generate 300 points including 0 and 58
+my_y_values = np.sin(my_x_values)
+
+plt.plot(my_x_values, my_y_values, '-o') # The '-o' makes it a line plot with dots
+
+### Plot 2 of 4 using np.cos()
+```
+
+
+### `numpy` Math Functions
+
+`numpy` Comes [pre-loaded with math functions](). If you want to compute the sine of $\pi/2$, for example:
+
+$$ \mathrm{sin}\left(\frac{\pi}{2}\right) $$
+
+You can use the `np.sin()` function, like this:
+
+```{python}
+import numpy as np
+np.sin(np.pi / 2) # the result should be 1.0
+```
+
+**BUT**, you can use the same `np.sin()` function on a _collection_ of numbers, and you'll get back a collection! `np.sin()` computes the sine of every element in your collection:
+
+```{python, eval=TRUE, echo=TRUE}
+import numpy as np
+my_x_values = np.linspace(0, np.pi / 2, 5)
+my_y_values = np.sin(my_x_values)
+"""
+you should get: 
+array([ 0.,  0.38268343,  0.70710678,  0.92387953,  1.])
+
+That makes sense, because sin(0) = 0, and sin(pi / 2) = 1
+"""
+```
+
+
+
