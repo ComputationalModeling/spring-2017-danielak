@@ -38,20 +38,17 @@ import matplotlib.pyplot as plt
 
 # generate 300 points including 0 and 58
 my_x_values = np.linspace(0, 58, 300)
-
 my_y_values = np.sin(my_x_values)
 
 # The '-o' makes it a line plot with dots
 plt.plot(my_x_values, my_y_values, '-o') 
 
 ### Plot 2 of 4 using np.cos()
-
 my_x_values = np.linspace(0, 0.1, 1000)
 my_y_values = np.cos(my_x_values)
 
 # Then plot them, and so on...
 ```
-
 
 # [Numpy Math Functions][1]
 
