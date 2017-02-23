@@ -1,12 +1,9 @@
 ---
-title: "Getting Practice with `numpy` and `np.linspace`"
+title: "Getting Practice with numpy and np.linspace"
 author: "Introduction to Computational Modeling"
 date: "2/22/2017"
 output: 
-  pdf_document:
-    highlight: tango
-  html_document:
-    highlight: tango
+  tufte::tufte_html: default
 ---
 
 ```{r setup, include=FALSE}
@@ -20,36 +17,45 @@ new_PATH <- paste(
 Sys.setenv(PATH = new_PATH)
 ```
 
-## What You Will Turn In
+# What You Will Turn In
 
 A python script (or Jupyter Notebook) that makes **4** plots.
 
-### For Each Plot
+## For Each Plot
 
 - Use `np.linspace` to generate your time steps (x-values)
-- Call [one of the `numpy` math functions] on your x-values to generate your y-values. Use a different `numpy` math function for each of your four plots
+- Call [one of the `numpy` math functions][1] on your x-values to generate your y-values. Use a different `numpy` math function for each of your four plots
 
 *This is something new*, so I'll explain below.
 
-## What your submission will look like
+# What your submission will look like
 
 ```{python}
 import numpy as np
 import matplotlib.pyplot as plt
 
 ### Plot 1 of 4 using np.sin()
-my_x_values = np.linspace(0, 58, 300) # generate 300 points including 0 and 58
+
+# generate 300 points including 0 and 58
+my_x_values = np.linspace(0, 58, 300)
+
 my_y_values = np.sin(my_x_values)
 
-plt.plot(my_x_values, my_y_values, '-o') # The '-o' makes it a line plot with dots
+# The '-o' makes it a line plot with dots
+plt.plot(my_x_values, my_y_values, '-o') 
 
 ### Plot 2 of 4 using np.cos()
+
+my_x_values = np.linspace(0, 0.1, 1000)
+my_y_values = np.cos(my_x_values)
+
+# Then plot them, and so on...
 ```
 
 
-### `numpy` Math Functions
+# [Numpy Math Functions][1]
 
-`numpy` Comes [pre-loaded with math functions](). If you want to compute the sine of $\pi/2$, for example:
+`numpy` Comes [pre-loaded with math functions][1]. If you want to compute the sine of $\pi/2$, for example:
 
 $$ \mathrm{sin}\left(\frac{\pi}{2}\right) $$
 
@@ -67,12 +73,16 @@ import numpy as np
 my_x_values = np.linspace(0, np.pi / 2, 5)
 my_y_values = np.sin(my_x_values)
 """
-you should get: 
-array([ 0.,  0.38268343,  0.70710678,  0.92387953,  1.])
 
-That makes sense, because sin(0) = 0, and sin(pi / 2) = 1
+you should get: 
+array([ 0.,  0.38268343,  0.70710678,  
+0.92387953,  1.])
+
+That makes sense, because 
+sin(0) = 0, and sin(pi / 2) = 1
+
 """
 ```
 
-
+[1]: https://docs.scipy.org/doc/numpy/reference/routines.math.html
 
