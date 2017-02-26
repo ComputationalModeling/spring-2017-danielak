@@ -30,24 +30,33 @@ A python script (or Jupyter Notebook) that makes **4** plots.
 
 # What your submission will look like
 
-```{python}
+```{python eval=FALSE}
 import numpy as np
 import matplotlib.pyplot as plt
 
 ### Plot 1 of 4 using np.sin()
 
-# generate 300 points including 0 and 58
+# First, create and name the figure
+figure1 = plt.figure()
+
+# Then create your x and y values
 my_x_values = np.linspace(0, 58, 300)
-my_y_values = np.sin(my_x_values)
+my_y_values = 8 * np.sin(my_x_values)
 
 # The '-o' makes it a line plot with dots
-plt.plot(my_x_values, my_y_values, '-o') 
+plt.plot(my_x_values, my_y_values, '-o')
+
+# Finally, show the plot
+plt.show()
+
 
 ### Plot 2 of 4 using np.cos()
+figure2 = plt.figure()
 my_x_values = np.linspace(0, 0.1, 1000)
 my_y_values = np.cos(my_x_values)
 
-# Then plot them, and so on...
+plt.plot(my_x_values, my_y_values, '-o')
+plt.show()
 ```
 
 # [Numpy Math Functions][1]
