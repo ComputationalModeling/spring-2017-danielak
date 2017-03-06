@@ -7,7 +7,8 @@ bibliography: "../../bibliography.bib"
 csl: "../../ieee-with-url.csl"
 link-citations: yes
 output:
-  html_document: default
+  html_document:
+    theme: "cosmo"
   tufte::tufte_html: default
   tufte::tufte_handout: default
 ---
@@ -28,12 +29,12 @@ A python script (`.py` file) that models dropping a cannonball off the [Washingt
 3. Plots a graph of the cannonball's position (y axis) versus time-steps (x-axis).
 5. Plots the cannonball's *velocity* (y-axis) versus *time* (x-axis).
 4. Answers thes questions: 
-  1. At what *time* does the cannonball hit the ground
-  2. how fast is the cannonball going **just before it hits the ground**
+    1. At what *time* does the cannonball hit the ground?
+    2. How fast is the cannonball going **just before it hits the ground**
 
 ## What Your Submission Will (roughly) Look Like
 
-```
+```python
 # Import any modules you need
 
 # Set up the quantities you know (height, acceleration due to gravity)
@@ -79,33 +80,20 @@ The equation we'll use to model drag through air is:
 
 $$ \vec{F}_{\textrm{drag}} = \frac{1}{2}CDA\vec{v}^2$$
 
-| Symbol | What It Stands For                 | Its Numerical Value                           |
-| ------ | ---------------------------------- | --------------------------------------------- |
-| $C$    | Coefficient of Drag                | 1 (for a sphere)                              |
-| $D$    | Density of the Fluid               | 1.184 $kg/m^3$ for air at $25 \deg$           |
-| $A$    | Cross-Sectional Area of the Object | $1\textrm{m}^2$ (it's a huge cannonball) |
-| $v$    | velocity of the cannonball         | 0, initially                                  |
+| Symbol | What It Stands For                 | Its Numerical Value                                  |
+| ------ | ---------------------------------- | ---------------------------------------------------- |
+| $C$    | Coefficient of Drag                | 1 (for a sphere)                                     |
+| $D$    | Density of the Fluid               | 1.184 $\textrm{kg}/\textrm{m}^3$ for air at $25^{o}$ |
+| $A$    | Cross-Sectional Area of the Object | $\pi(5\textrm{m})^2$ (it's a huge cannonball)        |
+| $v$    | velocity of the cannonball         | 0, initially                                         |
+#### Assume 
 
+- The cannonball is pure iron 
+- It has a $1\textrm{m}^2$ cross-sectional area. 
+- the density of iron is $7874\textrm{kg} / \textrm{m}^3$
 
-When we substitute in our values, we get this equation for our cannonball
+You'll need to do some math to figure out the acceleration on the cannonball at any instant in time. Remember:
 
-$$\vec{F}_{\textrm{drag}} = \frac{1}{2}(1)(1.184\textrm{kg/m^3})(\pi(0.5\textrm{m})^2) \vec{v}^2
+$$ \vec{a}_ = \frac{\vec{F}_\textrm{drag}}{m_\textrm{cannon ball}} $$
 
-$$
-
-Which computes out to
-
-$$ \vec{F}_{\textrm{drag}} \approx 0.465 \times \vec{v}^2 $$
-
-$$ \vec{a}_\textrm{drag} = 
-
-    \frac{\vec{F}_\textrm{drag}}{m_\textrm{cannon ball}}
-    = \frac{0.4650 \times \vec{v}^2}{4123 \mathrm{kg}}$$
-
-And finally, we have our acceleration due to drag purely in terms of our velocity:
-
-$$ \vec{a}_\textrm{drag} = 0.0001521 \times \vec{v}^2$$
-
-[@shiflet_introduction_2014 p. 66]
-
-## References
+And also remember that the force (and acceleration) of drag works against the acceleration due to gravity. Drag slows our cannonball.
