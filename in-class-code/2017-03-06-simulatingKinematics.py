@@ -12,7 +12,7 @@ time_step_size = time_steps[1] - time_steps[0]
 
 ### Create a way to collect/record data
 initial_data = {
-    'position': [position, 12],
+    'position': [position],
     'velocity': [velocity],
     'acceleration': [acceleration],
     'time': [0]
