@@ -1,24 +1,15 @@
 ---
 title: "I Came in Like a Wrecking Ball"
-subtitle: "Modeling a falling cannonball with drag"
 author: "Introduction to Computational Modeling"
 date: "`r Sys.Date()`"
-bibliography: "../../bibliography.bib"
-csl: "../../ieee-with-url.csl"
 link-citations: yes
+csl: ../../ieee-with-url.csl
+subtitle: Modeling a falling cannonball with drag
+bibliography: ../../bibliography.bib
 output:
   html_document:
-    theme: "cosmo"
-  tufte::tufte_html: default
-  tufte::tufte_handout: default
+    theme: cosmo
 ---
-
-```{r setup, include=FALSE}
-library(tufte)
-# invalidate cache when the tufte version changes
-knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tufte'))
-options(htmltools.dir.version = FALSE)
-```
 
 ## What you will turn in
 
@@ -83,17 +74,18 @@ $$ \vec{F}_{\textrm{drag}} = \frac{1}{2}CDA\vec{v}^2$$
 | Symbol | What It Stands For                 | Its Numerical Value                                  |
 | ------ | ---------------------------------- | ---------------------------------------------------- |
 | $C$    | Coefficient of Drag                | 1 (for a sphere)                                     |
-| $D$    | Density of the Fluid               | 1.184 $\textrm{kg}/\textrm{m}^3$ for air at $25^{o}$ |
-| $A$    | Cross-Sectional Area of the Object | $\pi(5\textrm{m})^2$ (it's a huge cannonball)        |
+| $D$    | Density of the Fluid               | 1.184 $\textrm{kg}/\textrm{m}^3$ for air at $25^{o}\textrm{C}$ |
+| $A$    | Cross-Sectional Area of the Object | $1\textrm{m}^2$ (it's a huge cannonball)        |
 | $v$    | velocity of the cannonball         | 0, initially                                         |
+
 #### Assume 
 
 - The cannonball is pure iron 
-- It has a $1\textrm{m}^2$ cross-sectional area. 
-- the density of iron is $7874\textrm{kg} / \textrm{m}^3$
+- The density of iron is $7874\textrm{kg} / \textrm{m}^3$
+- The cannonball has a $1\textrm{m}^2$ cross-sectional area 
 
 You'll need to do some math to figure out the acceleration on the cannonball at any instant in time. Remember:
 
-$$ \vec{a}_ = \frac{\vec{F}_\textrm{drag}}{m_\textrm{cannon ball}} $$
+$$ \vec{a}_\textrm{cannon ball} = \frac{\vec{F}_\textrm{drag}}{m_\textrm{cannon ball}} + \left(\textrm{acceleration due to gravity}\right) $$
 
-And also remember that the force (and acceleration) of drag works against the acceleration due to gravity. Drag slows our cannonball.
+And also remember that the force (and acceleration) of drag works against the acceleration due to gravity. *Drag slows our cannonball*.
