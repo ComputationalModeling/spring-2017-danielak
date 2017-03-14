@@ -2,6 +2,8 @@
 
 ## Grading Rubric
 
+Working as a class, you desuigned this rubric together, with an emphasis on it weighing conceptual understanding much more than valuing the right answer.
+
 ### Setup (including setting initial values) - 25%
 
 - Explanation and style (80%)
@@ -21,6 +23,10 @@
 
 - Explanation and style (80%)
 - Is it correct (20%)
+
+### How long does it take to hit the ground - 5% bonus
+
+- is your one final number correct?
 
 ## A note about explanations 
 
