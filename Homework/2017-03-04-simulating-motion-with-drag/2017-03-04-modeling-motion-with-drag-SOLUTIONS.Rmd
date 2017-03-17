@@ -1,0 +1,110 @@
+---
+title: "I Came in Like a Wrecking Ball"
+subtitle: "Modeling a falling cannonball with drag"
+author: "Introduction to Computational Modeling"
+date: "`r Sys.Date()`"
+bibliography: "../../bibliography.bib"
+csl: "../../ieee-with-url.csl"
+link-citations: yes
+output:
+  html_document: default
+  tufte::tufte_html: default
+  tufte::tufte_handout: default
+---
+
+```{r setup, include=FALSE}
+library(tufte)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+```
+
+## What you will turn in
+
+A python script (`.py` file) that models dropping a cannonball off the [Washington Monument](https://en.wikipedia.org/wiki/Washington_Monument). Your script will need to:
+
+1. Set up a simulation to drop a cannonball off the washington monument.
+2. Compute the acceleration in terms of gravity (like we have been doing in class) **but also [account for drag](#accounting-for-drag)**. 
+3. Plots a graph of the cannonball's position (y axis) versus time-steps (x-axis).
+5. Plots the cannonball's *velocity* (y-axis) versus *time* (x-axis).
+4. Answers thes questions: 
+  1. At what *time* does the cannonball hit the ground
+  2. how fast is the cannonball going **just before it hits the ground**
+
+## What Your Submission Will (roughly) Look Like
+
+```
+# Import any modules you need
+
+# Set up the quantities you know (height, acceleration due to gravity)
+
+# Set up a DataFrame to collect data on position, velocity, acceleration, and time
+
+# Run The Simulation
+
+## For each timestep:
+
+### Update Acceleration
+### Update Velocity
+### Update Position
+### Append the new quantities to the existing DataFrame
+
+# Plot The Data
+
+## Plot Position vs. Time
+
+## Plot Acceleration Vs. Time
+
+# Answer AND EXPLAIN HOW YOU DETERMINED
+
+## When the cannonball hits the ground
+## How fast it's going just before it hits the ground
+```
+
+## Drag
+
+### What Is Drag
+
+We're making our model a bit more complex this time by including *drag* (which we also call "air resistance"). Any time you've tried to walk outside, face to the wind, and it's difficult, you're experiencing drag.
+
+An extreme example of drag is that you can go "indoor skydiving", where you put your body over a giant fan. The fan blows hard enough to lift you off the ground, which provides enough air resistance to keep you from falling back to the floor:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KnxUb7U2W3g?start=170" frameborder="0" allowfullscreen></iframe>
+
+### How To Account For Drag in Your Model {.accounting-for-drag}
+
+*Formally*, drag produces a force. As our cannonball falls, the air is gradually going to push back up on it, providing an acceleration that opposes the falling.
+
+The equation we'll use to model drag through air is:
+
+$$ \vec{F}_{\textrm{drag}} = \frac{1}{2}CDA\vec{v}^2$$
+
+| Symbol | What It Stands For                 | Its Numerical Value                           |
+| ------ | ---------------------------------- | --------------------------------------------- |
+| $C$    | Coefficient of Drag                | 1 (for a sphere)                              |
+| $D$    | Density of the Fluid               | 1.184 $kg/m^3$ for air at $25^{o} \textrm{C}$           |
+| $A$    | Cross-Sectional Area of the Object | $1\textrm{m}^2$ (it's a huge cannonball)      |
+| $v$    | velocity of the cannonball         | 0, initially                                  |
+
+
+When we substitute in our values, we get this equation for the drag force on our cannonball
+
+$$ \vec{F}_{\textrm{drag}} = \frac{1}{2}(1)(1.184\textrm{kg/m^3})(1\textrm{m}^2) \vec{v}^2
+$$
+
+Which computes out to
+
+$$ \vec{F}_{\textrm{drag}} \approx 0.592 \times \vec{v}^2 $$
+
+$$ \vec{a}_\textrm{drag} = 
+
+    \frac{\vec{F}_\textrm{drag}}{m_\textrm{cannon ball}}
+    = \frac{1.860 \times \vec{v}^2}{5923 \mathrm{kg}} $$
+
+And finally, we have our acceleration due to drag purely in terms of our velocity:
+
+$$ \vec{a}_\textrm{drag} = 0.0003140301 \times \vec{v}^2$$
+
+[@shiflet_introduction_2014 p. 66]
+
+## References
