@@ -1,0 +1,21 @@
+---
+title: "Identifying Data Sets for your Data Analysis Project"
+author: "Introduction to Computational Modeling"
+date: "`r Sys.Date()`"
+link-citations: yes
+csl: ../../ieee-with-url.csl
+bibliography: ../../bibliography.bib
+output:
+  html_document:
+    theme: cosmo
+---
+
+# What you will turn in
+
+A text document where you identify and describe **3** datasets.
+
+## For each dataset
+
+1. Paste a link to the data
+2. Write at least one paragraph about how you found the data and what its structure is. (What columns are there? What kinds of values are in those columns?)
+3. Write at least one paragraph describing why you're interested in it and what questions you would like to explore
