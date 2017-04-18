@@ -5,7 +5,16 @@
 1. A Jupyter Notebook (`.ipynb` file) or a commented Python file (`.py`). 
 2. A reference to any datasets you're using.
 	1. If your pandas command looks like this `pd.read_csv("http://something.csv")`, then that means you're getting your data over the web. Just submit your Python script/notebook as normal. BUT, 
-	2. If your pandas command looks like this `pd.read_csv("Some/Directory/myData.csv")`, then you're working with a downloaded copy of the data. We need you to include a copy of `myData.csv` as part of your submission
+	2. If your pandas command looks like this `pd.read_csv("Some/Directory/myData.csv")`, then you're working with a downloaded copy of the data. We need you to include a copy of `myData.csv` as part of your submission. 
+	
+As a reminder, you can comment your Python code using triple-quotes.
+
+```python
+"""
+First, we load a fake dataset that I just made up.
+"""
+pd.read_csv("http://clowns-in-gokarts-getting-pies.com/pie_production_data.csv")
+```
 
 ## How we'll grade your submission (780 total possible points)
 
