@@ -6,7 +6,7 @@
 2. Pictures of what you've drawn/created on your whiteboards
 3. A written group reflection.
     1. **If you successfully got your code to run**, you'll explain it. Pretend you're writing to an 8th-grader who has some Python background but has never seen this model (or any model) and has never made plots. Your job is to get that student to fully understand your code, how it works, and why you've designed it the way you have. (For example: did you use functions? If so, why and how. If not, why not?
-    2. **If your code doesn't run**, write in detail about which parts seem to be giving you errors. You must also describe what you _tried_ to do and why you and most importantly, why you thought it would work.
+    2. **If your code doesn't run**, write in detail about which parts are giving you headaches. You must also describe what you _tried_ to do and why you and most importantly, why you thought it would work.
 
 ## Group Assignments
 
