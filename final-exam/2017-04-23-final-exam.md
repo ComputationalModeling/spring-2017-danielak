@@ -19,17 +19,6 @@
 
 ## How you will be graded
 
-You'll be graded as a group, and we'll be looking at four key categories.
-
-## Equity: Do all group members have a chance to contribute?
-
-### Equity - How to do well
-
-- All group members have a chance to speak contribute.
-- You're programming in pairs, or as a whole group
-
-### How to NOT do well
-
  Category        | How to do **WELL**                                                                                                                                                                                                                         | How to do **POORLY**
  ----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------
 **Equity**          | All group members have a chance to speak contribute. You’re programming in pairs, or as a whole group | One person is doing most of the talking. One or more group members is staying silent through most of the discussion. One group member is spending a lot of time coding on their own and not talking to anyone
