@@ -31,7 +31,7 @@ You'll be graded as a group, and we'll be looking at four key categories.
 
 ### How to NOT do well
 
- Category        | How to do **Well**                                                                                                                                                                                                                         | How to do **Poorly**
+ Category        | How to do **WELL**                                                                                                                                                                                                                         | How to do **POORLY**
  ----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------
 Equity          | All group members have a chance to speak contribute. You’re programming in pairs, or as a whole group | One person is doing most of the talking. One or more group members is staying silent through most of the discussion. One group member is spending a lot of time coding on their own and not talking to anyone
  Resourcefulness | Ask PRECISE questions. When you have questions, you’re FIRST checking google, the Python/numpy/pandas/matplotlib documentation, and each other so that when you ask us, you can tell us what you tried.                                    | Spend a long time (more than 10-15 minutes) on something, have it NOT work, and then NOT ask for help. Or, call us over for help and just say “our code isn’t working” without a precise description of the problem.
