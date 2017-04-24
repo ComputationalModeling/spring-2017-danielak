@@ -25,3 +25,14 @@
 **Resourcefulness** | Ask PRECISE questions. When you have questions, you’re FIRST checking google, the Python/numpy/pandas/matplotlib documentation, and each other so that when you ask us, you can tell us what you tried.                                    | Spend a long time (more than 10-15 minutes) on something, have it NOT work, and then NOT ask for help. Or, call us over for help and just say “our code isn’t working” without a precise description of the problem.
 **Sense-Making**    | When something works, understand why it works. Ask each other questions if there’s something you’re not sure of. When something doesn’t work, be able to describe what you tried, what you expected to happen, and what actually happened. | Never try to understand your code. Be unable to explain why it works. If it doesn’t work, don’t document what you tried
 **Design Process**  | Make diagrams when you can. Act out the code to debug it, just like we did in our games. Have someone be the Python interpreter, other people be the agents, and have the interpreter read the code line by line to tell the agents what to do. Hand-draw graphs if you can’t get them to plot. | Keep all the code on one person’s computer. Never make diagrams, drawings, or plain English descriptions of how your code works. Never try walking through the code one line at a time, pretending to be the Python interpreter.
+
+## Late/No-Show policy
+
+As a reminder:
+
+- If you show up more than 5 minutes late, you'll lose points
+- If you don't show up at all (and don't have valid documentation for why), you will earn the lowest possible grade for the exam.
+
+**Why are these rules so harsh?**
+
+I'm glad you asked, rhetorical device. They're harsh because we're a community, and you owe it to your classmates. If you don't show up, it makes things much harder for your group.
